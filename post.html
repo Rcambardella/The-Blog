@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>The Blog. Learning Front-End, One Project at a Time</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img src="images/image-avatar.jpg" alt="">
+
+        <div class="nav-toggle">
+            <div class="nav" id="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/blog.html" class="nav-divider-link">Blog</a>
+                <a href="/about.html" class="nav-divider-link">About</a>
+                <a href="/newsletter.html" class="nav-divider-link">Newsletter</a>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                <img src="images/icon-menu.svg" alt="Menu icon">
+            </button>
+
+            <button id="theme-toggle">
+                <img id="mode" src="images/icon-moon.svg" alt=""> <!-- Toggle Light Mode / Dark Mode -->
+            </button>
+        </div>
+    </div>
+    
+    <div class="main">
+        
+        <div class="main-post">
+            <h1 id="post-title" class="text-preset-1"></h1>
+            <p class="text-preset-8"><i id="post-date" ></i></p>
+            <div id="post-description" class="text-preset-7"></div>
+            <div id="post-content"></div>
+        </div>
+
+        <div class="footer">
+            <p class="text-preset-8">Made with ❤️ and ☕</p>
+            <div class="footer-socials">
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-x.svg" data-name="logo-x" alt="X">
+                </button>
+                 <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-github.svg" data-name="logo-github" alt="github">
+                </button>
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-linkedin.svg" data-name="logo-linkedin" alt="linkedin">
+                </button>
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-frontend-mentor.svg" data-name="logo-frontend-mentor" alt="frontend mentor">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>

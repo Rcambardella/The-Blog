@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>The Blog. Learning Front-End, One Project at a Time</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <div class="nav-bar">
+            <img src="images/image-avatar.jpg" alt="">
+    
+            <div class="nav-toggle">
+                <div class="nav" id="nav-links">
+                    <a href="/index.html">Home</a>
+                    <a href="/blog.html" class="nav-divider-link">Blog</a>
+                    <a href="/about.html" class="nav-divider-link">About</a>
+                    <a href="/newsletter.html" class="nav-divider-link">Newsletter</a>
+                </div>
+    
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                    <img src="images/icon-menu.svg" alt="Menu icon">
+                </button>
+    
+                <button id="theme-toggle">
+                    <img id="mode" src="images/icon-moon.svg" alt=""> <!-- Toggle Light Mode / Dark Mode -->
+                </button>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="blog">
+                <div class="bio">
+                    <h2 id="head" class="text-preset-2">Hi, I'm Paulina 👋</h2>
+                    <p class="text-preset-7">
+                        I'm on a journey to become a front-end web developer. 
+                        I love building little projects, trying out new coding 
+                        techniques, and sharing what I learn along the way. When 
+                        I'm not at my desk, you'll find me reading, hiking through 
+                        the mountains, or challenging myself on rock-climbing walls.
+                    </p>
+                    <br>
+                    <p class="text-preset-7">
+                        I started this blog to document my progress, keep myself 
+                        accountable, and hopefully inspire anyone else who's learning 
+                        to code. Welcome to my corner of the internet, and thanks 
+                        for stopping by!
+                    </p>
+                    <div class="bio-socials">
+                        <button>
+                            <img class="social-btn" id="bio-soc" src="images/logo-x.svg" data-name="logo-x" alt="X">
+                        </button>
+                        <button>
+                            <img class="social-btn" id="bio-soc" src="images/logo-github.svg" data-name="logo-github" alt="github">
+                        </button>
+                        <button>
+                            <img class="social-btn" id="bio-soc" src="images/logo-linkedin.svg" data-name="logo-linkedin" alt="linkedin">
+                        </button>
+                        <button>
+                            <img class="social-btn" id="bio-soc" src="images/logo-frontend-mentor.svg" data-name="logo-frontend-mentor" alt="frontend mentor">
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="entries">
+                    <div class="entries-header">
+                        <h2 class="text-preset-2" style="padding-top: 20px;">Latest Articles</h2>
+                        <div class="accent-line"></div>
+                      </div>
+        
+                    <div class="articles">
+                            <article class="article">
+                                <h3 class="title"><a href="post.html?slug=balancing-hobbies-and-coding">Balancing Hobbies and Coding: How Hiking and Rock Climbing Help Me Stay Motivated</a></h3>
+                                <p class="date"><i>February 18, 2025</i></p>
+                            </article>
+                            <article class="article">
+                                <h3 class="title"><a href="post.html?slug=5-books-that-shaped-my-coding-journey">Reading for Inspiration: 5 Books That Shaped My Coding Journey</a></h3>
+                                <p class="date"><i>February 15, 2025</i></p>
+                            </article>
+                            <article class="article">
+                                <h3 class="title"><a href="post.html?slug=overcoming-imposter-syndrome">Overcoming Imposter Syndrome as a New Developer</a></h3>
+                                <p class="date"><i>February 10, 2025</i></p>
+                            </article>
+                            <article class="article">
+                                <h3 class="title"><a href="post.html?slug=exploring-responsive-design">Exploring the World of Responsive Design</a></h3>
+                                <p class="date"><i>February 4, 2025</i></p>
+                            </article>
+                            <article class="article">
+                                <h3 class="title"><a href="post.html?slug=dev-tools-for-productivity">My Favorite Dev Tools for Productivity</a></h3>
+                                <p class="date"><i>January 29, 2025</i></p>
+                            </article>
+                    </div>
+        
+                    <div class="view-all">
+                        <a href="/blog.html" class="text-preset-8">View all articles</a>
+                    </div>
+            </div>
+    
+            <div class="footer">
+                <p class="text-preset-8">Made with ❤️ and ☕</p>
+                <div class="footer-socials">
+                    <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-x.svg" data-name="logo-x" alt="X">
+                    </button>
+                     <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-github.svg" data-name="logo-github" alt="github">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-linkedin.svg" data-name="logo-linkedin" alt="linkedin">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-frontend-mentor.svg" data-name="logo-frontend-mentor" alt="frontend mentor">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

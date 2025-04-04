@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>The Blog. Learning Front-End, One Project at a Time</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img src="images/image-avatar.jpg" alt="">
+
+        <div class="nav-toggle">
+            <div class="nav" id="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/blog.html" class="nav-divider-link">Blog</a>
+                <a href="/about.html" class="nav-divider-link">About</a>
+                <a href="/newsletter.html" class="nav-divider-link">Newsletter</a>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                <img src="images/icon-menu.svg" alt="Menu icon">
+            </button>
+
+            <button id="theme-toggle">
+                <img id="mode" src="images/icon-moon.svg" alt=""> <!-- Toggle Light Mode / Dark Mode -->
+            </button>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="blog">
+            <div class="bio">
+                <h2 id="head" class="text-preset-2">About Me</h2>
+                <p class="text-preset-7">
+                    Hi, I'm Paulina! Ever since I can remember, I've had a passion for 
+                    creativity and problem-solving. That's what led me to the world of 
+                    front-end web development. There's something magical about seeing 
+                    an idea come to life in the browser—whether it's a simple layout 
+                    experiment or a complex interface for a bigger project.
+                </p>
+                <br>
+                <p class="text-preset-7">
+                    When I'm not coding, I love getting lost in a good book. My taste 
+                    is pretty eclectic: I'll happily read everything from fantasy novels 
+                    to biographies of tech pioneers. Reading helps me unwind and often 
+                    sparks new ideas for my coding projects.
+                </p>
+                <br>
+                <p class="text-preset-7">
+                    Another big passion of mine is the great outdoors. Hiking allows 
+                    me to disconnect from the digital world and reconnect with nature. 
+                    I love challenging hikes with rewarding views at the top. And if I'm 
+                    not on the trails, you might catch me rock climbing. The combination 
+                    of mental focus and physical endurance is a perfect parallel to tackling 
+                    tough coding challenges!
+                </p>
+                <br>
+                <p class="text-preset-7">
+                    Some of my favorite books:
+                </p>
+                <br>
+                <ul class="text-preset-7">
+                    <li><span style="font-weight: 500;">“The Pragmatic Programmer”</span> by Andrew Hunt and David Thomas (for helpful insights into software development)</li>
+                    <li><span style="font-weight: 500;">“Ready Player One”</span> by Ernest Cline (for some futuristic escapism)</li>
+                    <li><span style="font-weight: 500;">“The Hobbit”</span> by J.R.R. Tolkien (for a bit of fantasy fun)</li>
+                    <li><span style="font-weight: 500;">“Educated”</span> by Tara Westover (for incredible inspiration)</li>
+                </ul>
+                <br>
+                <p class="text-preset-7">
+                    I absolutely love my workspace as a place that inspires me to do my best 
+                    work, so I thought I'd share it with you:
+                </p>
+
+                <img class="office" src="images/image-workspace-large.jpg" alt="Picture of Paulina's Workplace">
+
+                <p class="text-preset-7">
+                    I hope this blog not only documents my growth but also helps others see 
+                    that coding can be for everyone. Thanks for joining me on this journey!
+                </p>
+                <br>
+                <h3 class="text-preset-4">Follow me</h3>
+                <br>
+
+                <div class="blog-socials">
+                    <button>
+                        <img class="social-btn" id="bio-soc" src="images/logo-x.svg" data-name="logo-x" alt="X">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="bio-soc" src="images/logo-github.svg" data-name="logo-github" alt="github">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="bio-soc" src="images/logo-linkedin.svg" data-name="logo-linkedin" alt="linkedin">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="bio-soc" src="images/logo-frontend-mentor.svg" data-name="logo-frontend-mentor" alt="frontend mentor">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="text-preset-8">Made with ❤️ and ☕</p>
+            <div class="footer-socials">
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-x.svg" data-name="logo-x" alt="X">
+                </button>
+                 <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-github.svg" data-name="logo-github" alt="github">
+                </button>
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-linkedin.svg" data-name="logo-linkedin" alt="linkedin">
+                </button>
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-frontend-mentor.svg" data-name="logo-frontend-mentor" alt="frontend mentor">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>The Blog. Learning Front-End, One Project at a Time</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img src="images/image-avatar.jpg" alt="">
+
+        <div class="nav-toggle">
+            <div class="nav" id="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/blog.html" class="nav-divider-link">Blog</a>
+                <a href="/about.html" class="nav-divider-link">About</a>
+                <a href="/newsletter.html" class="nav-divider-link">Newsletter</a>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                <img src="images/icon-menu.svg" alt="Menu icon">
+            </button>
+
+            <button id="theme-toggle">
+                <img id="mode" src="images/icon-moon.svg" alt=""> <!-- Toggle Light Mode / Dark Mode -->
+            </button>
+        </div>
+    </div>
+    
+    <div class="main">
+            <div class="entries">
+                <div class="entries-header">
+                    <h2 class="text-preset-2">My Articles</h2>
+                    <div class="accent-line"></div>
+                  </div>
+                  
+                  <p class="text-preset-7 head-description">Below are all my recent blog posts. Click on any title to read the full article.</p>
+
+                <div class="articles">
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=balancing-hobbies-and-coding" class="text-preset-5">Balancing Hobbies and Coding: How Hiking and Rock Climbing Help Me Stay Motivated</a></h3>
+                            <p class="text-preset-8 date"><i>February 18, 2025</i></p>
+                            <p class="text-preset-7 description">Thoughts on maintaining energy and focus through outdoor activities and exercise.</p>
+                        </article>
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=5-books-that-shaped-my-coding-journey" class="text-preset-5">Reading for Inspiration: 5 Books That Shaped My Coding Journey</a></h3>
+                            <p class="text-preset-8 date"><i>February 15, 2025</i></p>
+                            <p class="text-preset-7 description">A few of my favorite books, both fiction and non-fiction, that keep me motivated.</p>
+                        </article>
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=overcoming-imposter-syndrome" class="text-preset-5">Overcoming Imposter Syndrome as a New Developer</a></h3>
+                            <p class="text-preset-8 date"><i>February 10, 2025</i></p>
+                            <p class="text-preset-7 description">Tips and personal reflections on dealing with self-doubt when learning to code.</p>
+                        </article>
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=exploring-responsive-design" class="text-preset-5">Exploring the World of Responsive Design</a></h3>
+                            <p class="text-preset-8 date"><i>February 4, 2025</i></p>
+                            <p class="text-preset-7 description">The importance of making websites look great on different devices.</p>
+                        </article>
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=dev-tools-for-productivity" class="text-preset-5">My Favorite Dev Tools for Productivity</a></h3>
+                            <p class="text-preset-8 date"><i>January 29, 2025</i></p>
+                            <p class="text-preset-7 description">A quick look at the tools I rely on, from code editors to browser extensions.</p>
+                        </article>
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=understanding-javascript-basics" class="text-preset-5">Understanding JavaScript Basics</a></h3>
+                            <p class="text-preset-8 date"><i>January 28, 2025</i></p>
+                            <p class="text-preset-7 description">My adventure into JavaScript's fundamentals—variables, functions, loops, and more.</p>
+                        </article>
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=learning-html-css" class="text-preset-5">Learning HTML & CSS: My First Week</a></h3>
+                            <p class="text-preset-8 date"><i>January 16, 2025</i></p>
+                            <p class="text-preset-7 description">A recap of my first steps in web development, from basic tags to styling techniques.</p>
+                        </article>
+                        <article class="article blog-article">
+                            <h3 class="title"><a href="post.html?slug=why-i-chose-front-end-web-development" class="text-preset-5">Why I Chose Front-End Web Development</a></h3>
+                            <p class="text-preset-8 date"><i>January 12, 2025</i></p>
+                            <p class="text-preset-7 description">The reasons behind my shift to front-end and why this path excites me.</p>
+                        </article>
+                </div>
+        </div>
+
+            <div class="footer">
+                <p class="text-preset-8">Made with ❤️ and ☕</p>
+                <div class="footer-socials">
+                    <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-x.svg" data-name="logo-x" alt="X">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-github.svg" data-name="logo-github" alt="github">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-linkedin.svg" data-name="logo-linkedin" alt="linkedin">
+                    </button>
+                    <button>
+                        <img class="social-btn" id="footer-soc" src="images/logo-frontend-mentor.svg" data-name="logo-frontend-mentor" alt="frontend mentor">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

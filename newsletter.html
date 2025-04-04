@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>The Blog. Learning Front-End, One Project at a Time</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img src="images/image-avatar.jpg" alt="">
+
+        <div class="nav-toggle">
+            <div class="nav" id="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/blog.html" class="nav-divider-link">Blog</a>
+                <a href="/about.html" class="nav-divider-link">About</a>
+                <a href="/newsletter.html" class="nav-divider-link">Newsletter</a>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                <img src="images/icon-menu.svg" alt="Menu icon">
+            </button>
+
+            <button id="theme-toggle">
+                <img id="mode" src="images/icon-moon.svg" alt=""> <!-- Toggle Light Mode / Dark Mode -->
+            </button>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="blog">
+            <div class="bio">
+                <h2 class="text-preset-2">About Me</h2>
+                <p class="text-preset-7">
+                    Want to stay updated on my latest articles, coding tutorials, and personal 
+                    adventures? Sign up for my newsletter! It's a simple way to keep track of 
+                    new posts and occasional coding tips I discover. Just drop your email in 
+                    the sign-up box, and I'll send you updates whenever there's something new 
+                    to share.
+                </p>
+                <br>
+                <h4 class="text-preset-5">
+                    I'd love to have you along for the ride and also hear about your own journey!
+                </h4>
+                <br>
+
+                <p class="text-preset-7">
+                    Email Address
+                </p>
+
+                <div class="newsletter">
+                    <form action="https://example.com/subscribe" method="POST" class="newsletter-form">
+                        <input 
+                        class="newsletter-email text-preset-7" 
+                        type="email" 
+                        name="email" 
+                        placeholder="email@example.com"
+                        required
+                        />
+                        <button type="submit" class="newsletter-button text-preset-6">Stay Updated</button>
+                    </form>
+                </div>
+                <p class="text-preset-7">Unsubscribe anytime. No spam, I promise 😊</p>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="text-preset-8">Made with ❤️ and ☕</p>
+            <div class="footer-socials">
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-x.svg" data-name="logo-x" alt="X">
+                </button>
+                 <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-github.svg" data-name="logo-github" alt="github">
+                </button>
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-linkedin.svg" data-name="logo-linkedin" alt="linkedin">
+                </button>
+                <button>
+                    <img class="social-btn" id="footer-soc" src="images/logo-frontend-mentor.svg" data-name="logo-frontend-mentor" alt="frontend mentor">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
